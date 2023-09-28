@@ -1,0 +1,7 @@
+import datetime
+import win10toast
+
+remind = win10toast.ToastNotifier().show_toast("Drink water","Sir, It's time for drink your water",duration=4)
+time = datetime.datetime.now().hour
+if time==7 or time==10 or time==12 or time==15 or time==18 or time==21:
+    print(remind)
